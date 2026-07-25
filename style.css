@@ -10,7 +10,7 @@ body {
 }
 
 /* ============================
-   虹色モード（背景＋光る）
+   虹色モード（背景アニメ）
 ============================ */
 .rainbow-mode {
   animation: rainbow-bg 6s linear infinite;
@@ -22,24 +22,24 @@ body {
   100% { background: linear-gradient(90deg,#ff0000,#ff7f00,#ffff00,#00ff00,#00ffff,#0000ff,#8b00ff); background-position: 100% 50%; }
 }
 
-/* 虹色モードで光る（強制適用） */
-.rainbow-mode * {
-  text-shadow: 0 0 12px #ffffff, 0 0 24px #ffffff;
-  transition: 0.3s;
-}
-
-.rainbow-mode .hero h1 {
+/* ============================
+   虹色モード：光る（色は消さない）
+============================ */
+.rainbow-mode .hero h1,
+.rainbow-mode .section h2,
+.rainbow-mode .title-text {
   text-shadow: 0 0 20px #fff, 0 0 40px #fff;
 }
 
-.rainbow-mode .section h2 {
-  text-shadow: 0 0 18px #fff, 0 0 36px #fff;
+.rainbow-mode p,
+.rainbow-mode a {
+  text-shadow: 0 0 10px rgba(255,255,255,0.7);
 }
 
 .rainbow-mode .url-btn {
-  border-color: #fff;
-  color: #fff;
-  box-shadow: 0 0 20px #fff, 0 0 40px #fff;
+  box-shadow: 0 0 20px #fff;
+  border-color: #7bdcff;
+  color: #7bdcff;
 }
 
 .rainbow-mode header {
