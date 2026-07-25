@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="normal-mode">
 
   <header>
     <div class="title-text">ショタボ教</div>
@@ -60,11 +60,13 @@
 
     normalBtn.onclick = () => {
       document.body.classList.remove("rainbow-mode");
+      document.body.classList.add("normal-mode");
       normalBtn.classList.add("active");
       rainbowBtn.classList.remove("active");
     };
 
     rainbowBtn.onclick = () => {
+      document.body.classList.remove("normal-mode");
       document.body.classList.add("rainbow-mode");
       rainbowBtn.classList.add("active");
       normalBtn.classList.remove("active");
