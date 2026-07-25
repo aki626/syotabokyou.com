@@ -1,5 +1,5 @@
 /* ============================
-   基本設定
+   基本設定（黒背景）
 ============================ */
 body {
   margin: 0;
@@ -7,56 +7,6 @@ body {
   background: #0b0c10;
   color: #f8f8f8;
   transition: 0.4s;
-}
-
-/* ============================
-   普通モード（黒背景）
-============================ */
-.normal-mode {
-  background: #0b0c10;
-}
-
-.normal-mode * {
-  text-shadow: none !important;
-  box-shadow: none !important;
-}
-
-/* ============================
-   虹色モード（背景アニメ）
-============================ */
-.rainbow-mode {
-  background: linear-gradient(90deg,#ff0000,#ff7f00,#ffff00,#00ff00,#00ffff,#0000ff,#8b00ff);
-  background-size: 400% 400%;
-  animation: rainbow-bg 6s linear infinite;
-}
-
-@keyframes rainbow-bg {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-
-/* ============================
-   虹色モード：光る
-============================ */
-.rainbow-mode .hero h1,
-.rainbow-mode .section h2,
-.rainbow-mode .title-text {
-  text-shadow: 0 0 20px #fff, 0 0 40px #fff;
-}
-
-.rainbow-mode p,
-.rainbow-mode a {
-  text-shadow: 0 0 10px rgba(255,255,255,0.7);
-}
-
-.rainbow-mode .url-btn {
-  box-shadow: 0 0 20px #fff;
-  border-color: #7bdcff;
-  color: #7bdcff;
-}
-
-.rainbow-mode header {
-  box-shadow: 0 0 25px #fff;
 }
 
 /* ============================
@@ -101,7 +51,7 @@ nav a:hover {
 }
 
 /* ============================
-   モード切り替えボタン
+   モード切り替えボタン（普通だけ残す）
 ============================ */
 .mode-switch {
   display: flex;
