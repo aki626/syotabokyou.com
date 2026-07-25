@@ -16,9 +16,9 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
 
+      <!-- 虹色ボタン削除、普通だけ残す -->
       <div class="mode-switch">
         <button id="normalBtn" class="mode-btn active">普通</button>
-        <button id="rainbowBtn" class="mode-btn">虹色</button>
       </div>
     </nav>
   </header>
@@ -56,20 +56,11 @@
 
   <script>
     const normalBtn = document.getElementById("normalBtn");
-    const rainbowBtn = document.getElementById("rainbowBtn");
 
+    // 普通モードだけなので、押しても特に切り替えはしない
     normalBtn.onclick = () => {
-      document.body.classList.remove("rainbow-mode");
       document.body.classList.add("normal-mode");
       normalBtn.classList.add("active");
-      rainbowBtn.classList.remove("active");
-    };
-
-    rainbowBtn.onclick = () => {
-      document.body.classList.remove("normal-mode");
-      document.body.classList.add("rainbow-mode");
-      rainbowBtn.classList.add("active");
-      normalBtn.classList.remove("active");
     };
   </script>
 
