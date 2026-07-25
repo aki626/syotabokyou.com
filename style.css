@@ -9,7 +9,9 @@ body {
   transition: 0.4s;
 }
 
-/* 虹色モード背景 */
+/* ============================
+   虹色モード（背景＋光る）
+============================ */
 .rainbow-mode {
   animation: rainbow-bg 6s linear infinite;
   background-size: 400% 400%;
@@ -18,6 +20,30 @@ body {
 @keyframes rainbow-bg {
   0% { background: linear-gradient(90deg,#ff0000,#ff7f00,#ffff00,#00ff00,#00ffff,#0000ff,#8b00ff); background-position: 0% 50%; }
   100% { background: linear-gradient(90deg,#ff0000,#ff7f00,#ffff00,#00ff00,#00ffff,#0000ff,#8b00ff); background-position: 100% 50%; }
+}
+
+/* 虹色モードで光る（強制適用） */
+.rainbow-mode * {
+  text-shadow: 0 0 12px #ffffff, 0 0 24px #ffffff;
+  transition: 0.3s;
+}
+
+.rainbow-mode .hero h1 {
+  text-shadow: 0 0 20px #fff, 0 0 40px #fff;
+}
+
+.rainbow-mode .section h2 {
+  text-shadow: 0 0 18px #fff, 0 0 36px #fff;
+}
+
+.rainbow-mode .url-btn {
+  border-color: #fff;
+  color: #fff;
+  box-shadow: 0 0 20px #fff, 0 0 40px #fff;
+}
+
+.rainbow-mode header {
+  box-shadow: 0 0 25px #fff;
 }
 
 /* ============================
@@ -41,7 +67,7 @@ header {
 }
 
 /* ============================
-   ナビゲーション
+   ナビ
 ============================ */
 nav {
   display: flex;
@@ -126,7 +152,7 @@ main {
 }
 
 /* ============================
-   URLボタン（ネオン）
+   URLボタン
 ============================ */
 .url-btn {
   display: inline-block;
@@ -159,27 +185,3 @@ footer {
   border-top: 1px solid #333;
   text-align: center;
 }
-/* 虹色モードで光るエフェクト */
-.rainbow-mode * {
-  transition: 0.3s;
-  text-shadow: 0 0 10px rgba(255,255,255,0.8);
-  box-shadow: 0 0 15px rgba(255,255,255,0.4);
-}
-
-/* タイトルを特に光らせる */
-.rainbow-mode .hero h1 {
-  text-shadow: 0 0 20px #fff, 0 0 40px #fff;
-}
-
-/* セクションタイトルも光る */
-.rainbow-mode .section h2 {
-  text-shadow: 0 0 15px #fff, 0 0 30px #fff;
-}
-
-/* ボタンも光る */
-.rainbow-mode .url-btn {
-  box-shadow: 0 0 20px #fff;
-  border-color: #fff;
-  color: #fff;
-}
-
