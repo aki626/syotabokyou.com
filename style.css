@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0b0c10;
+  color: #f8f8f8;
+}
+
+/* ヘッダー */
+header {
+  padding: 16px 32px;
+  background: #14161f;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 左上タイトル（ロゴなし） */
+.title-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+/* ナビゲーション */
+nav a {
+  color: #f8f8f8;
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  color: #7bdcff;
+}
+
+/* メイン */
+main {
+  padding: 40px 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* トップのタイトル */
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+  color: #7bdcff;
+}
+
+/* セクション */
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  border-left: 4px solid #7bdcff;
+  padding-left: 8px;
+}
+
+/* フッター */
+footer {
+  margin-top: 40px;
+  padding: 16px 32px;
+  font-size: 0.8rem;
+  color: #888;
+  border-top: 1px solid #333;
+  text-align: center;
+}
