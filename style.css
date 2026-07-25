@@ -159,3 +159,27 @@ footer {
   border-top: 1px solid #333;
   text-align: center;
 }
+/* 虹色モードで光るエフェクト */
+.rainbow-mode * {
+  transition: 0.3s;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+/* タイトルを特に光らせる */
+.rainbow-mode .hero h1 {
+  text-shadow: 0 0 20px #fff, 0 0 40px #fff;
+}
+
+/* セクションタイトルも光る */
+.rainbow-mode .section h2 {
+  text-shadow: 0 0 15px #fff, 0 0 30px #fff;
+}
+
+/* ボタンも光る */
+.rainbow-mode .url-btn {
+  box-shadow: 0 0 20px #fff;
+  border-color: #fff;
+  color: #fff;
+}
+
