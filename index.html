@@ -16,7 +16,7 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
 
-      <!-- 虹色ボタン削除、普通だけ残す -->
+      <!-- ★虹色ボタン削除済み★ -->
       <div class="mode-switch">
         <button id="normalBtn" class="mode-btn active">普通</button>
       </div>
@@ -57,7 +57,7 @@
   <script>
     const normalBtn = document.getElementById("normalBtn");
 
-    // 普通モードだけなので、押しても特に切り替えはしない
+    // 普通モードだけなので切り替え処理は最小限
     normalBtn.onclick = () => {
       document.body.classList.add("normal-mode");
       normalBtn.classList.add("active");
